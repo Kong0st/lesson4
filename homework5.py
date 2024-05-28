@@ -1,0 +1,22 @@
+immutable_var = ("расскладной", "компьютерный", "кухонный", "обеденный", True, 1, 2, 3, 5.4 )
+print(immutable_var)
+immutable_var = (["расскладной", "компьютерный"], 5, 9, 78)
+print(immutable_var)
+immutable_var [0][1] = "обедденный"
+print(immutable_var)
+immutable_var [0][0] = 44.9
+print(immutable_var)
+print ("Значение элементов самого кортежа изменить нельзя, но если кортеж содержит список, то в самом списке изменить элементы возможно.")
+print(" ")
+mutable_list = ["sea", "ocean", "river"]
+print(mutable_list)
+mutable_list.append("lake")
+print(mutable_list)
+mutable_list.extend([True, 2, 4])
+print(mutable_list)
+mutable_list.remove("ocean")
+print(mutable_list)
+mutable_list.remove(4)
+print(mutable_list)
+print("sea" in mutable_list)
+print(4 not in mutable_list)
